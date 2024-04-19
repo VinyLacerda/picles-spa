@@ -5,13 +5,13 @@
   gap: var(--spacing-xxl);
 }
 
-.container main {
+/* .container main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   gap: 12px;
-}
+} */
 
 .filters {
   display: flex;

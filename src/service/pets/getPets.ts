@@ -1,10 +1,12 @@
-import { GetPetResponse, GetPetsRequest } from '../../interfaces/pet'
+import { GetPetsResponse, GetPetsRequest } from '../../interfaces/pets'
 import httpClient from '../api/httpClient'
 
-export async function getPetsb(params?: GetPetsRequest): Promise<GetPetResponse> {
+export async function getPets(params?: GetPetsRequest): Promise<GetPetsResponse> {
     try {
+        await new Promise((resolve) => setTimeout(resolve, 2000))
         const response = await httpClient.get('/pet', { params })
         return response.data
+
     } catch (error) {
         console.log('Error searching for pet', error)
         throw error
