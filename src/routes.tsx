@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Pets } from './pages/Pets/Pets'
 import { PetDetails } from './pages/PetDetails'
-import { Shelter } from './service/shelter'
+import { Shelter } from './pages/Admin/Shelter'
 import { PetList } from './service/pets'
 import { AuthHOC } from './components/common/AuthHOC.tsx/AuthHOC'
 
