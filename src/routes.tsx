@@ -4,6 +4,7 @@ import { Pets } from './pages/Pets/Pets'
 import { PetDetails } from './pages/PetDetails'
 import { Shelter } from './service/shelter'
 import { PetList } from './service/pets'
+import { AuthHOC } from './components/common/AuthHOC.tsx/AuthHOC'
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
             },
             {
             path: '/admin/pets',
+            element: <AuthHOC/>,
             children: [
                  {
                     index: true,

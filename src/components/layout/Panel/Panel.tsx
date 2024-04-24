@@ -1,6 +1,7 @@
 
 import { ReactNode } from 'react'
 import styles from './Panel.module.css'
+import { Sidebar } from '../../common/Sidebar/Sidebar'
 
 interface IPanel {
     children: ReactNode
@@ -8,7 +9,7 @@ interface IPanel {
 
 export function Panel({children}: IPanel) {
     return <div className={styles.panel}>
-        <div>Sidebar</div>
+        <Sidebar/>
         <main className={styles.content}>{children}</main>
     </div>
 }
