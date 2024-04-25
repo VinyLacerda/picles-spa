@@ -1,8 +1,8 @@
 import { UseQueryOptions, useQuery, UseQueryResult } from '@tanstack/react-query'
-import { getShelter } from '../service/Shelter/getShelter'
+import { getShelter } from '../service/shelter/getShelter'
 import { IShelter } from '../interfaces/shelter'
 
-export {getShelter} from '../service/Shelter/getShelter'
+export {getShelter} from '../service/shelter/getShelter'
 
 export function useShelter
 (options?: Partial<UseQueryOptions<IShelter, Error>>
