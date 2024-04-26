@@ -5,6 +5,7 @@ import { PetDetails } from './pages/PetDetails'
 import { Shelter } from './pages/Admin/Shelter'
 import { PetList } from './service/pets'
 import { AuthHOC } from './components/common/AuthHOC.tsx/AuthHOC'
+import { PetForm } from './pages/Admin/PetForm/PetForm'
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,15 @@ const router = createBrowserRouter([
             },
         ]
     },
+    {
+        path: '/admin/pets/new',
+        element: <PetForm />,
+      },
+      {
+        path: '/admin/pets/:id',
+        element: <PetForm />,
+      },
+
 ])
 
 export default router
